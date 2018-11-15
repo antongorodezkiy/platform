@@ -10,7 +10,7 @@ use Orchid\Screen\Fields\TagsField;
 use Orchid\Screen\Fields\InputField;
 use Orchid\Screen\Fields\SelectField;
 use Orchid\Screen\Fields\PictureField;
-use Orchid\Screen\Fields\TinyMCEField;
+use Orchid\Screen\Fields\QuillField;
 use Orchid\Screen\Fields\CheckBoxField;
 use Orchid\Screen\Fields\TextAreaField;
 use Orchid\Screen\Fields\DateTimerField;
@@ -69,7 +69,7 @@ class RowExample extends Rows
                 ->required()
                 ->title('Short description'),
 
-            TinyMCEField::make('body')
+            QuillField::make('body')
                 ->required()
                 ->title('Name Articles')
                 ->help('Article title'),

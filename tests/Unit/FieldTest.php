@@ -55,7 +55,7 @@ class FieldTest extends TestUnitCase
                 [
                     'name' => 'example',
                 ], ],
-            [\Orchid\Screen\Fields\TinyMCEField::class,
+            [\Orchid\Screen\Fields\QuillField::class,
                 [
                     'name' => 'example',
                 ], ],

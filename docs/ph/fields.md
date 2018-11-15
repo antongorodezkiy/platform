@@ -21,7 +21,7 @@ Ang field ay nagsasangkot ng isang klase na may kasamang mandatoryong `create` n
     'datetime'     => Orchid\Screen\Fields\DateTimerField::class,
     'checkbox'     => Orchid\Screen\Fields\CheckBoxField::class,
     'code'         => Orchid\Screen\Fields\CodeField::class,
-    'wysiwyg'      => Orchid\Screen\Fields\TinyMCEField::class,
+    'wysiwyg'      => Orchid\Screen\Fields\QuillField::class,
     'password'     => Orchid\Screen\Fields\PasswordField::class,
     'markdown'     => Orchid\Screen\Fields\SimpleMDEField::class,
 ],

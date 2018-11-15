@@ -107,13 +107,13 @@ As entradas genéricas criadas com o sistema de `comportamento` podem ser locali
     'datetime'     => Orchid\Screen\Fields\DateTimerField::class,
     'checkbox'     => Orchid\Screen\Fields\CheckBoxField::class,
     'code'         => Orchid\Screen\Fields\CodeField::class,
-    'wysiwyg'      => Orchid\Screen\Fields\TinyMCEField::class,
+    'wysiwyg'      => Orchid\Screen\Fields\QuillField::class,
     'password'     => Orchid\Screen\Fields\PasswordField::class,
     'markdown'     => Orchid\Screen\Fields\SimpleMDEField::class,
 ],
 ```
 
-Nos aliases de campo de configuração de campo são usados para abstrair de elementos usados, por exemplo, `wysiwyg` é um alias para o redactor TinyMCEField. Se chegaste a decidir que a funcionalidade do redactor que tu usas não é suficiente, só precisarás mudar o seu alias para os outros, em vez de mudares o teu nome completo em todos os arquivos do teu projeto.
+Nos aliases de campo de configuração de campo são usados para abstrair de elementos usados, por exemplo, `wysiwyg` é um alias para o redactor QuillField. Se chegaste a decidir que a funcionalidade do redactor que tu usas não é suficiente, só precisarás mudar o seu alias para os outros, em vez de mudares o teu nome completo em todos os arquivos do teu projeto.
 
 [Mais sobre Campos](/en/docs/field/)
 

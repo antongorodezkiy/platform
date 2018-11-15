@@ -6,34 +6,6 @@
 Все возможные поля определены в `config/platform.php` в разделе полей.
 Каждое поле может использоваться в поведении, макете или фильтре. 
 
-Если вам нужно создать своё собственное поле, не стесняйтесь.
-Поле состоит из одного класса с обязательным методом `create`, который должен реализовать `представление` для отображения пользователю.
-
-
-```php
-// Доступные поля для формирования шаблонов
-'fields' => [
-    'textarea'     => Orchid\Screen\Fields\TextAreaField::class,
-    'input'        => Orchid\Screen\Fields\InputField::class,
-    'list'         => Orchid\Screen\Fields\ListField::class,
-    'tags'         => Orchid\Screen\Fields\TagsField::class,
-    'select'       => Orchid\Screen\Fields\SelectField::class,
-    'relationship' => Orchid\Screen\Fields\RelationshipField::class,
-    'picture'      => Orchid\Screen\Fields\PictureField::class,
-    'datetime'     => Orchid\Screen\Fields\DateTimerField::class,
-    'checkbox'     => Orchid\Screen\Fields\CheckBoxField::class,
-    'code'         => Orchid\Screen\Fields\CodeField::class,
-    'wysiwyg'      => Orchid\Screen\Fields\TinyMCEField::class,
-    'password'     => Orchid\Screen\Fields\PasswordField::class,
-    'markdown'     => Orchid\Screen\Fields\SimpleMDEField::class,
-],
-```
-
-
-Поля и поведения указываются отдельно, что позволяет использовать лишь ключ, 
-например в записи мы хотим wysing редактор, а значением будет класс. 
-Это позволяет менять редактор с tinymce на summernote или ckeditor почти в один клик.
-
 
 > Не стесняйтесь добавлять свои поля, например, для использования удобного редактора для вас или любых компонентов.
  
@@ -65,12 +37,12 @@ return [
 
 Визуальный редактор в котором содержание отображается в процессе редактирования и 
 выглядит максимально близко похожим на конечный результат.
-Редактор позволяет вставлять рисунки, таблицы, указывать стили оформления текста, видео.
+Редактор позволяет вставлять рисунки, указывать стили оформления текста, видео.
  
 Пример записи:
 ```php
 return [
-    'body' => TinyMCEField::make()
+    'body' => QuillField::make()
                   ->name('body')
                   ->required()
                   ->title('Name Articles')

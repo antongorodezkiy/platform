@@ -7,7 +7,7 @@ namespace Orchid\Screen\Fields;
 use Orchid\Screen\Field;
 
 /**
- * Class TinyMCEField.
+ * Class QuillField.
  *
  * @method $this accept($value = true)
  * @method $this accesskey($value = true)
@@ -39,12 +39,12 @@ use Orchid\Screen\Field;
  * @method $this value($value = true)
  * @method $this help($value = true)
  */
-class TinyMCEField extends Field
+class QuillField extends Field
 {
     /**
      * @var string
      */
-    public $view = 'platform::fields.tinymce';
+    public $view = 'platform::fields.quill';
 
     /**
      * Attributes available for a particular tag.
@@ -84,7 +84,7 @@ class TinyMCEField extends Field
 
     /**
      * @param null $name
-     * @return TinyMCEField
+     * @return QuillField
      */
     public static function make($name = null): self
     {

@@ -13,7 +13,7 @@ use Orchid\Screen\Fields\TagsField;
 use Orchid\Screen\Fields\InputField;
 use Orchid\Screen\Fields\UploadField;
 use Orchid\Screen\Fields\PictureField;
-use Orchid\Screen\Fields\TinyMCEField;
+use Orchid\Screen\Fields\QuillField;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Screen\Fields\CheckBoxField;
 use Orchid\Screen\Fields\TextAreaField;
@@ -148,7 +148,7 @@ class Post extends Many
                     ->help('Event for free'),
             ]),
 
-            TinyMCEField::make('body')
+            QuillField::make('body')
                 ->required()
                 ->title('Name Articles')
                 ->help('Article title'),

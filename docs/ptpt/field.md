@@ -23,7 +23,7 @@ O campo consiste numa classe com um método obrigatório `create` que deve imple
     'datetime'     => Orchid\Screen\Fields\DateTimerField::class,
     'checkbox'     => Orchid\Screen\Fields\CheckBoxField::class,
     'code'         => Orchid\Screen\Fields\CodeField::class,
-    'wysiwyg'      => Orchid\Screen\Fields\TinyMCEField::class,
+    'wysiwyg'      => Orchid\Screen\Fields\QuillField::class,
     'password'     => Orchid\Screen\Fields\PasswordField::class,
     'markdown'     => Orchid\Screen\Fields\SimpleMDEField::class,
 ],
@@ -69,7 +69,7 @@ O redactor permite adicionar imagens, tabelas, definir estilos de texto e inseri
 Um exemplo:
 ```php
 return [
-    'body' => TinyMCEField::make()
+    'body' => QuillField::make()
                   ->name('body')
                   ->required()
                   ->title('Name Articles')

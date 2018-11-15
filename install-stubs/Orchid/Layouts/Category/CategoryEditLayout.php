@@ -7,7 +7,7 @@ namespace App\Orchid\Layouts\Category;
 use Orchid\Screen\Layouts\Rows;
 use Orchid\Screen\Fields\InputField;
 use Orchid\Screen\Fields\SelectField;
-use Orchid\Screen\Fields\TinyMCEField;
+use Orchid\Screen\Fields\QuillField;
 
 class CategoryEditLayout extends Rows
 {
@@ -44,7 +44,7 @@ class CategoryEditLayout extends Rows
                 })
                 ->title(__('Parent Category')),
 
-            TinyMCEField::make($categoryContent.'.body')
+            QuillField::make($categoryContent.'.body')
                 ->title(__('Description')),
 
         ];
