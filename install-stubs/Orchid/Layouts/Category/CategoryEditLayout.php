@@ -6,8 +6,8 @@ namespace App\Orchid\Layouts\Category;
 
 use Orchid\Screen\Layouts\Rows;
 use Orchid\Screen\Fields\InputField;
-use Orchid\Screen\Fields\SelectField;
 use Orchid\Screen\Fields\QuillField;
+use Orchid\Screen\Fields\SelectField;
 
 class CategoryEditLayout extends Rows
 {
