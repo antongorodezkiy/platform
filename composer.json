@@ -20,7 +20,7 @@
     "composer/semver": "^1.4",
     "cviebrock/eloquent-sluggable": "^4.4",
     "intervention/image": "^2.4",
-    "laravel/framework": "5.6.*",
+    "laravel/framework": "5.*",
     "laravel/scout": "*",
     "ralouphie/mimey": "^1.0",
     "spomky-labs/base64url": "^1.0",
