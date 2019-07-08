@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "cartalyst/tags": "^6.0",
+    "cartalyst/tags": "^7.0",
     "composer/semver": "^1.4",
     "cviebrock/eloquent-sluggable": "^4.4",
     "intervention/image": "^2.4",
